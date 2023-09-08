@@ -8,6 +8,7 @@ O frontend da aplicação será desenvolvido utilizando o framework Angular.
 
 ## Protótipo
 
+https://www.figma.com/file/uHYlX5ERBkC5sMFyxdknHX/Untitled?type=design&node-id=2-2&mode=design&t=HUfhBmfEYlxXbXCz-0
 
 ## Checklist
 #### RA1 - Prototipar e projetar interfaces gráficas de usuário, considerando princípios de usabilidade e experiência do usuário.
