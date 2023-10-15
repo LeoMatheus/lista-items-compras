@@ -1,0 +1,39 @@
+<!-- FILEPATH: /home/leom/Documents/UTFPR/2 Semestre 2023/DESENVOLVIMENTO DE APLICAÇÕES FRONTEND WEB COM FRAMEWORKS E COMPONENTES/Projeto/lista-items-compras/src/app/server/server.component.html -->
+
+<div class="container">
+  <form>
+    <div class="form-group">
+      <label for="recipeName">Recipe Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="recipeName"
+        placeholder="Enter recipe name"
+        (input)="onUpdateRecipeName($event)"
+      />
+
+      <p>{{ recipeName }}</p>
+    </div>
+    <div class="form-group">
+      <label for="recipeIngredients">Recipe Ingredients</label>
+      <textarea
+        class="form-control"
+        id="recipeIngredients"
+        rows="3"
+        [(ngModel)]="recipeIngredients"
+        name="recipeIngredients"
+      ></textarea>
+
+      <p>{{ recipeIngredients }}</p>
+    </div>
+    <button
+      type="submit"
+      class="btn btn-primary"
+      [disabled]="!allowNewRecipe"
+      (click)="onCreateRecipe()"
+    >
+      Submit
+    </button>
+  </form>
+  <p>{{ recipeCreationStatus }}</p>
+</div>
