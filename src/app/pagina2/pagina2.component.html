@@ -1,0 +1,23 @@
+<!-- FILEPATH: /home/leom/Documents/UTFPR/2 Semestre 2023/DESENVOLVIMENTO DE APLICAÇÕES FRONTEND WEB COM FRAMEWORKS E COMPONENTES/Projeto/lista-items-compras/src/app/pagina2/pagina2.component.html -->
+<!-- BEGIN: ed8c6549bwf9 -->
+<h1 class="display-4">This is Page 2</h1>
+<p class="lead">Welcome to Page 2 of our shopping list app!</p>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Price</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngIf="selectedObjeto">
+      <td>{{ selectedObjeto.nome }}</td>
+      <td>{{ selectedObjeto.quantidade }}</td>
+      <td>{{ selectedObjeto.preco }}</td>
+    </tr>
+  </tbody>
+
+  <a routerLink="/pagina1" class="badge bg-primary">Volte</a>
+</table>
