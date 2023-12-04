@@ -1,1 +1,20 @@
-app-recipe-item
+<a
+  href="#"
+  class="list-group-item list-group-item-action"
+  (click)="onSelected()"
+>
+  <div class="d-flex">
+    <div class="flex-shrink-0">
+      <img
+        [src]="recipe?.imagePath"
+        alt="Recipe"
+        class="img-fluid"
+        style="max-height: 50px"
+      />
+    </div>
+    <div class="flex-grow-1 ms-3">
+      <h4 class="list-group-item-heading">{{ recipe?.name }}</h4>
+      <p class="list-group-item-text">{{ recipe?.description }}</p>
+    </div>
+  </div>
+</a>
